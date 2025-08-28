@@ -69,8 +69,7 @@ Bright Brand Studio offers a strategic framework to help businesses:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/bright-brand-studio.git
-   cd bright-brand-studio
+   git clone https://github.com/Lydoww/BBStudio-NextJs.git
    ```
 
 2. **Install dependencies**

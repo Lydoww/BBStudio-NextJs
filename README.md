@@ -1,7 +1,4 @@
-<div align="left">
-  <img src="./public/BBS-lightTheme.png" alt="Bright Brand Studio Logo" width="60" style="vertical-align: middle; margin-right: 15px;">
-  <span style="font-size: 2.5em; font-weight: bold;">Bright Brand Studio</span>
-</div>
+# <img src="./public/BBS-lightTheme.png" alt="Logo" width="50"> Bright Brand Studio
 
 **Ethical Brand Strategy & Sustainable Marketing**
 

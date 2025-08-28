@@ -25,7 +25,7 @@ Bright Brand Studio offers a strategic framework to help businesses:
 - **Icons**: [Lucide React](https://lucide.dev/) - Beautiful & consistent icon toolkit
 - **Image Optimization**: [React Lazy Load](https://github.com/Aljullu/react-lazy-load-image-component) - Lazy loading for better performance
 - **Routing**: [React Router DOM](https://reactrouter.com/) - Declarative routing for React
-- **Build Tool**: [Vite](https://vitejs.dev/) - Next generation frontend tooling
+- **Build System**: Next.js built-in compiler and bundler
 
 ---
 
@@ -59,7 +59,6 @@ Bright Brand Studio offers a strategic framework to help businesses:
 - **Accent Font**: Chango (for headings)
 
 ---
-
 
 ## 🚀 Getting Started
 

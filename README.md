@@ -1,4 +1,8 @@
-# 🌟 Bright Brand Studio
+<div align="center">
+  <img src="./public/BBS-lightTheme.png" alt="Bright Brand Studio Logo" width="120">
+</div>
+
+# Bright Brand Studio
 
 **Ethical Brand Strategy & Sustainable Marketing**
 

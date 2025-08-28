@@ -103,11 +103,9 @@ const CarouselComponent = () => {
       setShowHand(false);
 
       if (swipeDistance > 0) {
-        // Swipe vers la gauche = next
         setDirection(1);
         setCurrentIndex(currentIndex >= data.length - 1 ? 0 : currentIndex + 1);
       } else {
-        // Swipe vers la droite = prev
         setDirection(-1);
         setCurrentIndex(
           currentIndex === 0 ? data.length - 1 : currentIndex - 1

@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import audreyImage from '../../../public/audrey.png';
 
 const AboutSection = () => {
   return (
@@ -43,13 +44,14 @@ const AboutSection = () => {
 
           <div className='flex justify-center lg:justify-end pr-0 lg:-mr-24 overflow-visible relative lg:right-16 xl:right-24'>
             <Image
-              src='/audrey.png'
+              src={audreyImage}
               alt='Audrey Meaulard - Ethical Brand Strategist and Sustainable Marketing Consultant in Australia'
               width={450}
               height={450}
               className='rounded-lg object-cover w-full max-w-[400px] sm:max-w-[500px] h-auto'
               priority
               sizes='(max-width: 640px) 210px, (max-width: 1024px) 280px, 450px'
+              placeholder='blur'
             />
           </div>
         </div>
@@ -88,12 +90,13 @@ const AboutSection = () => {
 
           <div className='absolute right-10 bottom-0 [@media(max-width:870px)]:bottom-0'>
             <Image
-              src='/audrey.png'
+              src={audreyImage} 
               alt='Audrey Meaulard - Ethical Brand Strategist and Sustainable Marketing Consultant in Australia'
               width={280}
               height={350}
               className='w-[280px] h-[350px] rounded-lg object-cover'
               sizes='280px'
+              placeholder='blur'
             />
           </div>
         </div>
@@ -132,12 +135,13 @@ const AboutSection = () => {
 
           <div className='absolute right-5 bottom-0 z-0 pointer-events-none [@media(max-width:375px)]:hidden'>
             <Image
-              src='/audrey.png'
+              src={audreyImage}
               alt='Audrey Meaulard - Ethical Brand Strategist and Sustainable Marketing Consultant in Australia'
               width={210}
               height={230}
               className='w-[210px] h-[230px] rounded-lg object-cover block'
               sizes='210px'
+              placeholder='blur'
             />
           </div>
         </div>

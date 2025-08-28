@@ -6,6 +6,11 @@ html {
   scroll-behavior: smooth;
 }
 
+body[data-page='404'] nav,
+body[data-page='404'] .navbar {
+  display: none !important;
+}
+
 html,
 body {
   overflow-x: hidden;

@@ -33,7 +33,7 @@ const services = [
   {
     title: 'Ethical Alignment',
     description:
-      'Helping conscious businesses articulate their values, walk their talk, and evolve their practices to reflect their social and environmental impact.',
+      'Helping conscious businesses articulate their values, and evolve their practices to reflect their social and environmental impact.',
     listHeader: 'Deliverables can include:',
     list: [
       'Brand purpose definition or refinement',

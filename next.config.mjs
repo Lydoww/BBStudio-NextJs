@@ -4,6 +4,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
     formats: ['image/webp', 'image/avif'],
+    qualities: [25, 50, 75, 85, 100],
   },
 };
 

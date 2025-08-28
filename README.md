@@ -34,6 +34,7 @@ Bright Brand Studio offers a strategic framework to help businesses:
 - **Responsive Design** - Optimized for all devices and screen sizes
 - **Static Site Export** - Fast loading times with pre-built pages
 - **SEO Optimized** - Complete meta tags and social media integration
+- **Custom 404 Page** - Clean error handling with brand consistency
 - **Google Analytics** - Built-in tracking and analytics
 - **Performance Optimized** - Lazy loading images and compressed assets
 - **Accessible** - Semantic HTML and proper contrast ratios
@@ -59,6 +60,7 @@ Bright Brand Studio offers a strategic framework to help businesses:
 
 ---
 
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -70,6 +72,7 @@ Bright Brand Studio offers a strategic framework to help businesses:
 1. **Clone the repository**
    ```bash
    git clone https://github.com/Lydoww/BBStudio-NextJs.git
+   cd BBStudio-NextJs
    ```
 
 2. **Install dependencies**
@@ -94,41 +97,13 @@ Bright Brand Studio offers a strategic framework to help businesses:
 npm run build
 ```
 
-This creates an optimized production build in the `out/` directory, ready for static hosting.
-
-### Deploy to Static Hosting
-The site is configured for static export and can be deployed to:
-- Netlify
-- Vercel
-- GitHub Pages
-- Any static hosting provider
-
-Simply upload the contents of the `out/` directory to your hosting provider.
+This creates an optimized production build in the `out/` directory. The site is deployed on SwishConnect hosting in Australia.
 
 ---
 
 ## 🔧 Configuration
 
-### Environment Variables
-Create a `.env.local` file for environment-specific configurations:
-```env
-NEXT_PUBLIC_GA_ID=your-google-analytics-id
-NEXT_PUBLIC_SITE_URL=https://brightbrandstudio.com.au
-```
-
-### Next.js Configuration
-The project uses static export configuration in `next.config.js`:
-```javascript
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export',
-  images: {
-    unoptimized: true,
-    formats: ['image/webp', 'image/avif'],
-    qualities: [25, 50, 75, 85, 100],
-  },
-};
-```
+The project is optimized for static export and deployed on SwishConnect hosting in Australia.
 
 ---
 
@@ -151,6 +126,8 @@ const nextConfig = {
 - LinkedIn optimization
 - Structured data markup
 
+---
+
 ## 📞 Contact
 
 **Audrey Meaulard** - Brand Strategist  
@@ -166,8 +143,8 @@ This project is proprietary and confidential. All rights reserved.
 
 <div align="center">
 
-**Built with ❤️ for conscious businesses making a positive impact**
+**Built for conscious businesses making a positive impact**
 
-[Visit Website](https://brightbrandstudio.com.au) • [Contact Audrey](mailto:contact@brightbrandstudio.com.au)
+[Visit Website](https://brightbrandstudio.com.au)
 
 </div>

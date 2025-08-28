@@ -12,8 +12,8 @@ const Cart = ({
     <div
       className={`flex flex-col text-left border border-black rounded-lg shadow-md p-4 sm:p-6 pb-12 sm:pb-16 w-full max-w-sm sm:w-80 transition-all duration-700 ease-in-out ${
         isExpanded
-          ? 'bg-[var(--color-blue)] border-hidden relative z-20 shadow-2xl min-h-[400px] sm:min-h-[480px]'
-          : 'relative z-10 min-h-[200px] sm:min-h-[256px]'
+          ? 'bg-[var(--color-blue)] border-hidden relative z-20 shadow-2xl min-h-[400px] sm:min-h-[480px] md:min-h-[520px]'
+          : 'relative z-10 min-h-[200px] sm:min-h-[256px] md:h-[300px] lg:h-[200px]'
       }`}
     >
       <h3

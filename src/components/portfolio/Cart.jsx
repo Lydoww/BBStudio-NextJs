@@ -36,13 +36,12 @@ const Cart = ({ title, labels, description, image, alt, isFirst = false }) => {
 
       <div className='w-full lg:w-2/3 p-4 lg:p-6 lg:flex lg:items-center'>
         <div className='relative w-full h-auto max-h-[400px] sm:max-h-[450px] md:max-h-[500px] lg:max-h-[550px] xl:max-h-[600px] rounded-[15px] overflow-hidden'>
-          
           {isLoading && (
-            <div className="absolute inset-0 flex items-center justify-center  rounded-[15px] z-10">
-              <div className="animate-spin rounded-full h-8 w-8 border-2 border-gray-300 border-t-[var(--color-orange)]"></div>
+            <div className='absolute inset-0 flex items-center justify-center  rounded-[15px] z-10'>
+              <div className='animate-spin rounded-full h-8 w-8 border-2 border-gray-300 border-t-[var(--color-orange)]'></div>
             </div>
           )}
-          
+
           <Image
             className={`object-contain rounded-[15px] transition-all duration-500 hover:scale-105 ${
               isLoading ? 'opacity-0' : 'opacity-100'
@@ -57,7 +56,7 @@ const Cart = ({ title, labels, description, image, alt, isFirst = false }) => {
             width={800}
             height={600}
             sizes='(max-width: 640px) 100vw, (max-width: 1024px) 66vw, 800px'
-            priority={false}
+            priority={isFirst}
             onLoad={() => setIsLoading(false)}
             onError={() => setIsLoading(false)}
           />

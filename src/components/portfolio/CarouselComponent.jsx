@@ -4,7 +4,7 @@ import data from './portfolioData';
 import Cart from './Cart';
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Image from 'next/image';
+import OptimizedImage from '../ui/OptimizedImage';
 
 const CarouselComponent = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -233,7 +233,7 @@ const CarouselComponent = () => {
             exit='exit'
             transition={{ duration: 0.5, ease: 'easeInOut' }}
           >
-            <Cart {...data[currentIndex]} />
+            <Cart {...data[currentIndex]} isFirst={currentIndex === 0} />
           </motion.div>
         </AnimatePresence>
 
@@ -246,7 +246,7 @@ const CarouselComponent = () => {
               exit='exit'
               className='absolute inset-0 flex items-center justify-center pointer-events-none z-20'
             >
-              <Image
+              <OptimizedImage
                 src='/hand.png'
                 alt='Swipe gesture indicator for mobile navigation'
                 width={192}

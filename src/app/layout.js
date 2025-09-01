@@ -22,16 +22,32 @@ export const metadata = {
   },
   icons: {
     icon: [
-      { url: '/BBS-lightTheme.png', media: '(prefers-color-scheme: light)' },
-      { url: '/BBS-darkTheme.png', media: '(prefers-color-scheme: dark)' },
+      {
+        url: '/BBS-lightTheme.png',
+        media: '(prefers-color-scheme: light)',
+        sizes: '32x32',
+      },
+      {
+        url: '/BBS-darkTheme.png',
+        media: '(prefers-color-scheme: dark)',
+        sizes: '32x32',
+      },
     ],
     shortcut: [
       { url: '/BBS-lightTheme.png', media: '(prefers-color-scheme: light)' },
       { url: '/BBS-darkTheme.png', media: '(prefers-color-scheme: dark)' },
     ],
     apple: [
-      { url: '/BBS-lightTheme.png', media: '(prefers-color-scheme: light)' },
-      { url: '/BBS-darkTheme.png', media: '(prefers-color-scheme: dark)' },
+      {
+        url: '/BBS-lightTheme.png',
+        media: '(prefers-color-scheme: light)',
+        sizes: '180x180',
+      },
+      {
+        url: '/BBS-darkTheme.png',
+        media: '(prefers-color-scheme: dark)',
+        sizes: '180x180',
+      },
     ],
   },
   openGraph: {
@@ -81,6 +97,32 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en' translate='no'>
       <head>
+        {/* Favicon meta tags */}
+        <link
+          rel='icon'
+          type='image/png'
+          sizes='32x32'
+          href='/BBS-lightTheme.png'
+          media='(prefers-color-scheme: light)'
+        />
+        <link
+          rel='icon'
+          type='image/png'
+          sizes='32x32'
+          href='/BBS-darkTheme.png'
+          media='(prefers-color-scheme: dark)'
+        />
+        <link
+          rel='apple-touch-icon'
+          href='/BBS-lightTheme.png'
+          media='(prefers-color-scheme: light)'
+        />
+        <link
+          rel='apple-touch-icon'
+          href='/BBS-darkTheme.png'
+          media='(prefers-color-scheme: dark)'
+        />
+
         {/* Google Analytics */}
         <Script
           src='https://www.googletagmanager.com/gtag/js?id=G-S29WGMPW85'

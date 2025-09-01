@@ -3,9 +3,15 @@ const nextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
-    formats: ['image/webp', 'image/avif'],
+    loader: 'custom',
+    loaderFile: './imageLoader.js',
+
     qualities: [25, 50, 75, 85, 100],
   },
+
+  trailingSlash: true,
+  compress: true,
+  poweredByHeader: false,
 };
 
 export default nextConfig;

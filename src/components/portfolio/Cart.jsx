@@ -1,9 +1,20 @@
 import { useState } from 'react';
 import Image from 'next/image';
 
-const Cart = ({ title, labels, description, image, alt, isFirst = false }) => {
+const Cart = ({
+  title,
+  labels,
+  description,
+  image,
+  video,
+  alt,
+  isFirst = false,
+}) => {
   const arrayLabels = Object.values(labels);
   const [isLoading, setIsLoading] = useState(true);
+
+  const isVideo = video || (image && image.endsWith('.mp4'));
+  const mediaSrc = video || image;
 
   return (
     <div className='flex flex-col lg:flex-row border border-[var(--color-brown)] rounded-[15px] shadow'>
@@ -42,24 +53,43 @@ const Cart = ({ title, labels, description, image, alt, isFirst = false }) => {
             </div>
           )}
 
-          <Image
-            className={`object-contain rounded-[15px] transition-all duration-500 hover:scale-105 ${
-              isLoading ? 'opacity-0' : 'opacity-100'
-            }`}
-            src={image}
-            alt={
-              alt ||
-              `${title} - Portfolio project showcasing ${arrayLabels.join(
-                ', '
-              )} work by Audrey Meaulard`
-            }
-            width={800}
-            height={600}
-            sizes='(max-width: 640px) 100vw, (max-width: 1024px) 66vw, 800px'
-            priority={isFirst}
-            onLoad={() => setIsLoading(false)}
-            onError={() => setIsLoading(false)}
-          />
+          {isVideo ? (
+            <video
+              className={`w-full h-full object-contain rounded-[15px] transition-all duration-500  ${
+                isLoading ? 'opacity-0' : 'opacity-100'
+              }`}
+              preload='metadata'
+              poster={image && !image.endsWith('.mp4') ? image : undefined}
+              onLoadedMetadata={() => setIsLoading(false)}
+              onError={() => setIsLoading(false)}
+              autoPlay
+              muted
+              loop
+              playsInline
+            >
+              <source src={mediaSrc} type='video/mp4' />
+              Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+          ) : (
+            <Image
+              className={`object-contain rounded-[15px] transition-all duration-500  ${
+                isLoading ? 'opacity-0' : 'opacity-100'
+              }`}
+              src={mediaSrc}
+              alt={
+                alt ||
+                `${title} - Portfolio project showcasing ${arrayLabels.join(
+                  ', '
+                )} work by Audrey Meaulard`
+              }
+              width={800}
+              height={600}
+              sizes='(max-width: 640px) 100vw, (max-width: 1024px) 66vw, 800px'
+              priority={isFirst}
+              onLoad={() => setIsLoading(false)}
+              onError={() => setIsLoading(false)}
+            />
+          )}
         </div>
 
         <div className='text-justify text-sm sm:text-base mt-4 lg:hidden'>

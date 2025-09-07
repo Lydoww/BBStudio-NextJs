@@ -1,12 +1,12 @@
+// portfolio/CarouselClient.jsx
 'use client';
 
-import data from './portfolioData';
 import Cart from './Cart';
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import OptimizedImage from '../ui/OptimizedImage';
 
-const CarouselComponent = () => {
+const CarouselClient = ({ portfolioData }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(1);
   const [isMobile, setIsMobile] = useState(false);
@@ -75,12 +75,12 @@ const CarouselComponent = () => {
 
   const nextSlide = () => {
     setDirection(1);
-    setCurrentIndex(currentIndex >= data.length - 1 ? 0 : currentIndex + 1);
+    setCurrentIndex(currentIndex >= portfolioData.length - 1 ? 0 : currentIndex + 1);
   };
 
   const prevSlide = () => {
     setDirection(-1);
-    setCurrentIndex(currentIndex === 0 ? data.length - 1 : currentIndex - 1);
+    setCurrentIndex(currentIndex === 0 ? portfolioData.length - 1 : currentIndex - 1);
   };
 
   const handleTouchStart = (e) => {
@@ -104,11 +104,11 @@ const CarouselComponent = () => {
 
       if (swipeDistance > 0) {
         setDirection(1);
-        setCurrentIndex(currentIndex >= data.length - 1 ? 0 : currentIndex + 1);
+        setCurrentIndex(currentIndex >= portfolioData.length - 1 ? 0 : currentIndex + 1);
       } else {
         setDirection(-1);
         setCurrentIndex(
-          currentIndex === 0 ? data.length - 1 : currentIndex - 1
+          currentIndex === 0 ? portfolioData.length - 1 : currentIndex - 1
         );
       }
     }
@@ -233,7 +233,7 @@ const CarouselComponent = () => {
             exit='exit'
             transition={{ duration: 0.5, ease: 'easeInOut' }}
           >
-            <Cart {...data[currentIndex]} isFirst={currentIndex === 0} />
+            <Cart {...portfolioData[currentIndex]} isFirst={currentIndex === 0} />
           </motion.div>
         </AnimatePresence>
 
@@ -262,4 +262,4 @@ const CarouselComponent = () => {
   );
 };
 
-export default CarouselComponent;
+export default CarouselClient;

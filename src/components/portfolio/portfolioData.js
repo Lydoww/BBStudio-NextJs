@@ -1,4 +1,4 @@
-const carouselData = [
+export const portfolioData = [
   {
     title: 'Homonoia',
     labels: {
@@ -21,6 +21,30 @@ const carouselData = [
       "I led the complete development of Homonoia Paris's brand identity, starting with in-depth research into ethical fashion trends and consumer expectations. I then conceptualized the brand's visual and messaging strategy to reflect its commitment to sustainability, upcycling, and social impact. I defined every aspect of its personality, crafting a narrative that ensured the brand's values were clear and compelling across all communication channels.\n\nI designed a distinctive visual system, selecting harmonious color palettes, eco-friendly packaging materials, and minimalist layouts for both print and digital use. I created brand assets such as product tags, business cards, and social media templates. I also managed the production of professional photography and collection visuals, overseeing art direction and styling so that every image authentically represented Homonoia's story and values.",
     image: '/portfolioImage/second.png',
     alt: 'Homonoia Paris brand identity design - Sustainable fashion brand visual system with eco-friendly packaging and minimalist design elements',
+  },
+  {
+    title: 'Homonoia',
+    labels: {
+      first: 'Website Optimization',
+      second: 'Brand Strategy',
+      third: 'Ethical Alignment',
+    },
+    description:
+      'Led the full development and management of Homonoia’s Shopify site, delivering a smooth, brand-aligned shopping experience. Integrated multiple third-party apps to optimize payments, inventory, and marketing automation. Managed all product data and uploads to boost visibility and sales. Oversaw content creation, design, and fulfillment management personally, ensuring consistent messaging, compelling aesthetics, and smooth order processing. Continuously enhanced UX through testing and analytics, improving navigation, mobile responsiveness, and checkout flow. Implemented SEO best practices to increase organic traffic, while overseeing site maintenance, performance improvements, and security to support scalable growth.',
+    image: '/video/website-shopify-developpement-ux.mp4',
+    alt: 'Homonoia Shopify website development and optimization - Brand-aligned shopping experience with seamless integration of third-party apps',
+  },
+  {
+    title: 'Family Business Central',
+    labels: {
+      first: 'Brand Strategy',
+      second: 'Content Strategy',
+      third: 'Content Creation',
+    },
+    description:
+      'Developed and executed a comprehensive marketing strategy for Family Business Central, centered around a detailed editorial calendar managed in Notion. The calendar integrates diverse content channels including LinkedIn, newsletters, Eventbrite emailings, and blog posts, ensuring consistent and timely communication with the target audience. This structured approach optimizes audience engagement by strategically scheduling educational and promotional content, webinars, and Q&A sessions. By aligning content themes with key dates and marketing goals, the calendar facilitates seamless collaboration and effective campaign tracking, driving brand growth and sustained community interaction.',
+    image: '/portfolioImage/seven.png',
+    alt: 'Family Business Central marketing strategy - Comprehensive editorial calendar with diverse content channels for consistent communication',
   },
   {
     title: 'Family Business Central',
@@ -66,5 +90,3 @@ const carouselData = [
     alt: 'Valerie Helm artist Instagram content - Interior design integration showcasing paintings in harmonious home settings for enhanced visual appeal',
   },
 ];
-
-export default carouselData;

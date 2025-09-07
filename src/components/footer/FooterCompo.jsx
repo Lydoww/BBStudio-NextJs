@@ -1,8 +1,10 @@
+'use client';
+
 import React from 'react';
 
 const FooterCompo = () => {
   return (
-    <div
+    <footer
       id='footer'
       className='overflow-hidden relative min-h-[75vh] md:min-h-[70vh] lg:min-h-[80vh]'
       style={{
@@ -176,7 +178,7 @@ const FooterCompo = () => {
           }}
         />
       </div>
-    </div>
+    </footer>
   );
 };
 

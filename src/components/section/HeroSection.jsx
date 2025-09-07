@@ -2,9 +2,9 @@ import Background from '../layout/Background';
 import HomeHero from '../home/HomeHero';
 import ServicesSection from './ServicesSection';
 import AboutSection from './AboutSection';
-import PortfolioSection from './PortfolioSection';
-import ReviewSection from './ReviewSection';
-import FooterSection from './FooterSection';
+import PortfolioContainer from '../portfolio/PortfolioContainer';
+import ReviewsContainer from '../review/ReviewsContainer';
+import FooterCompo from '../footer/FooterCompo';
 
 const HomeSection = () => {
   return (
@@ -33,20 +33,30 @@ const HomeSection = () => {
         id='portfolio'
         className='scroll-mt-16 sm:scroll-mt-20 lg:scroll-mt-24'
       >
-        <PortfolioSection />
+        <div className='min-h-screen bg-[#F5F0E9] py-12 sm:py-12 lg:py-16'>
+          <div className='max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8'>
+            <h1 className='text-center text-4xl! md:text-6xl! lg:text-7xl! font-gulfs text-[var(--color-brown)]! mb-8 sm:mb-12'>
+              PORTFOLIO
+            </h1>
+            <div className='flex justify-center'>
+              <PortfolioContainer />
+            </div>
+          </div>
+        </div>
       </section>
+
       <section
         id='review'
         className='scroll-mt-16 sm:scroll-mt-20 lg:scroll-mt-24'
       >
-        <ReviewSection />
+        <ReviewsContainer />
       </section>
 
       <section
         id='Footer'
         className='scroll-mt-16 sm:scroll-mt-20 lg:scroll-mt-24'
       >
-        <FooterSection />
+        <FooterCompo />
       </section>
     </>
   );

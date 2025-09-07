@@ -1,4 +1,4 @@
-import Carousel from '@/components/services/Carousel';
+import ServicesContainer from '@/components/services/ServicesContainter';
 import Marque from '@/components/services/Marque';
 
 const ServicesSection = () => {
@@ -26,7 +26,7 @@ const ServicesSection = () => {
           Let's grow your ethical brand
         </a>
       </div>
-      <Carousel />
+      <ServicesContainer />
       <h3 className='text-[41px]! lg:text-[37px]! text-[var(--color-brown)] mb-12 sm:mb-16 lg:mb-20 max-w-4xl sm:max-w-5xl lg:max-w-6xl mt-8 leading-12 font-semibold! px-4 sm:px-6'>
         And all of this, rooted in{' '}
         <span className='italic text-[var(--color-orange)] sm:text-[var(--color-brown)]'>

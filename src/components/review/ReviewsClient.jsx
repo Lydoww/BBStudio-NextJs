@@ -2,49 +2,11 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 
-const ReviewsCarousel = () => {
+const ReviewsClient = ({ reviewsData }) => {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [screenSize, setScreenSize] = useState('mobile');
   const sectionRef = useRef(null);
-
-  const reviews = [
-    {
-      id: 1,
-      name: 'Cara G.',
-      text: 'Audrey was so wonderful, very kind and patient, and is incredibly prompt with communication. Definitely book Audrey for your next task!',
-      rating: 5,
-      color: 'purple',
-    },
-    {
-      id: 2,
-      name: 'Mary D.',
-      text: "Audrey did amazing work. One of the best freelancers I've used. Highly recommend",
-      rating: 5,
-      color: 'orange-light',
-    },
-    {
-      id: 3,
-      name: 'Mina H.',
-      text: 'Thank you Audrey. Absolutely amazing to work with, listened to all my requests and helped me publish my ebook online. Will hire again definitely recommend',
-      rating: 5,
-      color: 'blue',
-    },
-    {
-      id: 4,
-      name: 'Chris T.',
-      text: 'Audrey is the consummate professional who takes great pride in her work',
-      rating: 5,
-      color: 'dark',
-    },
-    {
-      id: 5,
-      name: 'Jackson M.',
-      text: 'Perfectly on time, and very professional. I will definitely be using her again!',
-      rating: 5,
-      color: 'orange',
-    },
-  ];
 
   useEffect(() => {
     const updateScreenSize = () => {
@@ -77,7 +39,7 @@ const ReviewsCarousel = () => {
   };
 
   const config = getConfig();
-  const maxIndex = Math.max(0, reviews.length - config.cardsVisible);
+  const maxIndex = Math.max(0, reviewsData.length - config.cardsVisible);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -133,7 +95,7 @@ const ReviewsCarousel = () => {
   }, [maxIndex, currentIndex]);
 
   const getCardStyle = (index) => {
-    const totalCards = reviews.length;
+    const totalCards = reviewsData.length;
 
     if (scrollProgress < 1) {
       let centerIndex;
@@ -257,7 +219,7 @@ const ReviewsCarousel = () => {
           <QuoteIcon className='absolute bottom-[-25px] right-30 w-30 h-30 text-[var(--color-orange)] hidden xl:block transform rotate-180' />
 
           <div className='relative w-full h-full flex items-center justify-center'>
-            {reviews.map((review, index) => (
+            {reviewsData.map((review, index) => (
               <div
                 key={review.id}
                 className={`absolute p-6 rounded-2xl shadow-lg ${getColorClasses(
@@ -311,4 +273,4 @@ const ReviewsCarousel = () => {
   );
 };
 
-export default ReviewsCarousel;
+export default ReviewsClient;

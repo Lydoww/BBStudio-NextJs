@@ -1,6 +1,6 @@
 export const portfolioData = [
   {
-    title: 'Homonoia',
+    title: 'Purpose-Driven Storytelling',
     labels: {
       first: 'Content Strategy',
       second: 'Ethical Alignment',
@@ -12,7 +12,7 @@ export const portfolioData = [
     alt: 'Homonoia sustainable accessories brand content strategy - Instagram and Pinterest visual content showcasing ethical fashion and environmental awareness',
   },
   {
-    title: 'Homonoia',
+    title: 'Complete Brand Ecosystem',
     labels: {
       first: 'Brand Strategy',
       second: 'Visual Identity',
@@ -23,7 +23,7 @@ export const portfolioData = [
     alt: 'Homonoia Paris brand identity design - Sustainable fashion brand visual system with eco-friendly packaging and minimalist design elements',
   },
   {
-    title: 'Homonoia',
+    title: 'Seamless Ethical Ecommerce',
     labels: {
       first: 'Website Optimization',
       second: 'Brand Strategy',
@@ -35,7 +35,7 @@ export const portfolioData = [
     alt: 'Homonoia Shopify website development and optimization - Brand-aligned shopping experience with seamless integration of third-party apps',
   },
   {
-    title: 'Family Business Central',
+    title: 'Digital Marketing Strategy',
     labels: {
       first: 'Brand Strategy',
       second: 'Content Strategy',
@@ -47,7 +47,7 @@ export const portfolioData = [
     alt: 'Family Business Central marketing strategy - Comprehensive editorial calendar with diverse content channels for consistent communication',
   },
   {
-    title: 'Family Business Central',
+    title: 'Lead Magnet Campaign',
     labels: {
       first: 'Brand Strategy',
       second: 'Content Strategy',
@@ -59,7 +59,7 @@ export const portfolioData = [
     alt: 'Family Business Central lead magnet design - Professional PDF guide with branded typography and visual elements for family business management',
   },
   {
-    title: 'Family Business Central',
+    title: 'Linkedin B2B Content Strategy',
     labels: {
       first: 'Content Strategy',
       second: 'Content Creation',
@@ -70,7 +70,7 @@ export const portfolioData = [
     alt: 'Family Business Central LinkedIn content strategy - Professional social media visuals with consistent branding and business insights content',
   },
   {
-    title: 'Made Toperform',
+    title: 'Instagram Fitness Challenge Launch',
     labels: {
       first: 'Content Creation',
     },
@@ -80,7 +80,7 @@ export const portfolioData = [
     alt: 'Made Toperform fitness challenge Instagram campaign - Motivational carousel posts with engaging visuals and clear challenge messaging',
   },
   {
-    title: 'Valerie Helm',
+    title: 'Instagram Visual Storytelling',
     labels: {
       first: 'Content Creation',
     },

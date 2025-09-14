@@ -7,7 +7,7 @@ export const portfolioData = [
       third: 'Content Creation',
     },
     description:
-      "I orchestrated a purpose-driven content strategy specifically tailored for Homonoia, a sustainable French accessories brand. This included identifying the key values to communicate, raising awareness about environmental and social impact, and planning each content piece around brand-relevant themes and events (such as Earth Day or ethical fashion milestones). Every content piece—be it Instagram or Pinterest visuals, story highlights, or educational posts—was designed to beautifully reflect Homonoia's aesthetic and reinforce its ethical positioning. I managed the visual storytelling across different platforms to ensure brand cohesion and increased organic visibility through strategic cross-posting.",
+      "I orchestrated a purpose-driven content strategy for Homonoia, a sustainable French accessories brand, from brand creation through five years of growth. I developed social media content—including 520+ Instagram posts, 200+ newsletters, and 50+ influencer or media partnerships — that consistently reflected the brand’s ethical values and aesthetic. This strategy drove strong audience engagement, with 7% average Instagram engagement, newsletters achieving a consistent open rate of 30%, and Pinterest reaching 700,000 impressions in 2024, reinforcing Homonoia’s position as a socially conscious, sustainable brand.",
     image: '/portfolioImage/first.png',
     alt: 'Homonoia sustainable accessories brand content strategy - Instagram and Pinterest visual content showcasing ethical fashion and environmental awareness',
   },
@@ -18,7 +18,7 @@ export const portfolioData = [
       second: 'Visual Identity',
     },
     description:
-      "I led the complete development of Homonoia Paris's brand identity, starting with in-depth research into ethical fashion trends and consumer expectations. I then conceptualized the brand's visual and messaging strategy to reflect its commitment to sustainability, upcycling, and social impact. I defined every aspect of its personality, crafting a narrative that ensured the brand's values were clear and compelling across all communication channels.\n\nI designed a distinctive visual system, selecting harmonious color palettes, eco-friendly packaging materials, and minimalist layouts for both print and digital use. I created brand assets such as product tags, business cards, and social media templates. I also managed the production of professional photography and collection visuals, overseeing art direction and styling so that every image authentically represented Homonoia's story and values.",
+      "I led the complete development of Homonoia Paris's brand identity over five years, from market research on ethical fashion to defining its visual and messaging strategy. I crafted a cohesive narrative and visual system — including eco-friendly packaging, social media templates, product tags, professional photography, and collection visuals — ensuring the brand’s sustainability and social impact values were consistently communicated across all touchpoints. Over this period, I created 100+ brand assets, strengthening brand recognition, consistency, and storytelling across all channels, and providing a solid foundation for audience engagement and long-term growth.",
     image: '/portfolioImage/second.png',
     alt: 'Homonoia Paris brand identity design - Sustainable fashion brand visual system with eco-friendly packaging and minimalist design elements',
   },
@@ -30,7 +30,7 @@ export const portfolioData = [
       third: 'Ethical Alignment',
     },
     description:
-      'Led the full development and management of Homonoia’s Shopify site, delivering a smooth, brand-aligned shopping experience. Integrated multiple third-party apps to optimize payments, inventory, and marketing automation. Managed all product data and uploads to boost visibility and sales. Oversaw content creation, design, and fulfillment management personally, ensuring consistent messaging, compelling aesthetics, and smooth order processing. Continuously enhanced UX through testing and analytics, improving navigation, mobile responsiveness, and checkout flow. Implemented SEO best practices to increase organic traffic, while overseeing site maintenance, performance improvements, and security to support scalable growth.',
+      'I led the full development and management of Homonoia’s Shopify site, delivering a smooth, brand-aligned shopping experience. I integrated multiple third-party apps to optimize payments, inventory, and marketing automation, and managed all product data and uploads to boost visibility and sales. By continuously enhancing UX through testing, mobile optimization, and SEO, the site achieved organic traffic growth of nearly 20x from April 2022 to February 2025, with 6% average click-through rate, 2.6% conversion rate, and 40% of traffic from organic sources. This scalable infrastructure ensured consistent messaging, compelling aesthetics, and smooth order processing, supporting the brand’s long-term growth.',
     image: '/video/website-shopify-developpement-ux.mp4',
     alt: 'Homonoia Shopify website development and optimization - Brand-aligned shopping experience with seamless integration of third-party apps',
   },
@@ -54,7 +54,7 @@ export const portfolioData = [
       third: 'Content Creation',
     },
     description:
-      "I developed a visibility-boosting free guide PDF lead magnet. This resource offered actionable insights on managing a family business, carefully structured to reflect the brand's identity. I crafted both the content and design layout, ensuring every visual matched the established branding. This involved harmonizing typography, color palette, and visual direction with the company's professional image. To maximize reach, I implemented a coordinated promotional campaign for the lead magnet. This spanned across key digital touchpoints, including social media, dedicated landing pages, and email signatures. I ensured the messaging and visuals delivered were always consistent and compelling.",
+      "I developed a visibility-boosting free guide PDF lead magnet offering actionable insights on managing a family business. I crafted both the content and design layout, ensuring every visual matched the established branding. To maximize reach, I implemented a coordinated promotional campaign across key digital touchpoints, including social media, dedicated landing pages, and email signatures. The new lead magnet delivered a 7% increase in newsletter subscribers within just a few weeks, while also introducing an automated sign-up system for the first time.",
     image: '/portfolioImage/third.png',
     alt: 'Family Business Central lead magnet design - Professional PDF guide with branded typography and visual elements for family business management',
   },
@@ -65,7 +65,7 @@ export const portfolioData = [
       second: 'Content Creation',
     },
     description:
-      "I developed the LinkedIn content strategy for Family Business Central, managing every step from planning to execution. Using a deep understanding of the brand's professional identity and target audience, I crafted a detailed editorial calendar—scheduling posts that highlighted industry leadership, business insights, and company updates. For each post, I designed original visuals that were fully aligned with the brand's visual guidelines, including consistent color schemes, typography, and layout. My approach ensured every piece of content was not only engaging and informative, but also visually cohesive and instantly recognizable as part of Family Business Central's brand. Through this process, I strengthened both the company's digital presence and audience engagement on LinkedIn.",
+      "I developed the LinkedIn content strategy for Family Business Central, managing everything from planning to execution. By crafting a detailed editorial calendar and designing original, on-brand visuals, I ensured each post was engaging, informative, and visually cohesive. Results: impressions grew 10x and members reached 8x over four months, demonstrating both immediate and sustained impact on the company's LinkedIn presence.",
     image: '/portfolioImage/four.png',
     alt: 'Family Business Central LinkedIn content strategy - Professional social media visuals with consistent branding and business insights content',
   },
